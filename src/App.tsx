@@ -1,7 +1,8 @@
 import './App.css'
+import FileUpload from './components/FileUpload'
 
 function App() {
-  return (<span>File Upload Project</span>)
+  return <FileUpload />
 }
 
 export default App
