@@ -11,7 +11,7 @@ export default function FileUploadingList({ uploadedFiles, isStartUpload }: File
     if (!isStartUpload) return;
 
     return (
-        <ul className="uploading-file-list">
+        <ul className="flex flex-col gap-5">
             {
                 uploadedFiles.map((file, index) => {
                     return <FileUploadingItem key={`${file.name}-${index}`} file={file} />
